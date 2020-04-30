@@ -5,21 +5,15 @@ from adventure.models import Player, Room
 Room.objects.all().delete()
 
 r_outside = Room(title="Outside Soldier Field",
-               description="North of you, the game is about to start")
+               description="North of you, you see the ticketing gate")
 
-r_foyer = Room(title="Foyer", description="""Dim light filters in from the south. Dusty
-passages run north and east.""")
+r_foyer = Room(title="You arrived at the ticketing Gate", description="""Please pay to proceed! P.S It's pretty expensive!""")
 
-r_overlook = Room(title="Grand Overlook", description="""A steep cliff appears before you, falling
-into the darkness. Ahead to the north, a light flickers in
-the distance, but there is no way across the chasm.""")
+r_overlook = Room(title="You found your seat!", description="""You can barely see the field.""")
 
-r_narrow = Room(title="Narrow Passage", description="""The narrow passage bends here from west
-to north. The smell of gold permeates the air.""")
+r_narrow = Room(title="The game started", description="""Trubisky throws a pick on the first snap! You're pulling your hair out!""")
 
-r_treasure = Room(title="Treasure Chamber", description="""You've found the long-lost treasure
-chamber! Sadly, it has already been completely emptied by
-earlier adventurers. The only exit is to the south.""")
+r_treasure = Room(title="Final drive!", description="""Somehow Trubisky has kept you in the game, you're down one point and are at the 43 yard line! Out comes the kicker all needs to do is make this last field goal and you win the game!""")
 
 r_outside.save()
 r_foyer.save()
